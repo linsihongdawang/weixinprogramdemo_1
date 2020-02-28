@@ -1,0 +1,7 @@
+/* pages/home/home.wxss */
+.title{
+  color: blue
+}
+.button_1{
+  size: 30px
+}
