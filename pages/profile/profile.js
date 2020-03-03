@@ -1,28 +1,13 @@
-// pages/home/home.js
-// getApp()获取App()产生的对象
-const app = getApp()
-// console.log(app.golabelData.creater);
-// console.log(app.golabelData.age);
-const name = app.golabelData.creater;
-const age = app.golabelData.age;
+// pages/profile/profile.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-     name:'LSHdawang',
-     age:18,
-     students:[
-       { id: 1, name: 'lsh', age: 19 },
-       { id: 1, name: 'zty', age: 19 }],
-     counter:0  
+
   },
-  handleBtnClick(){
-    //this.setData()
-     this.setData({
-       counter:this.data.counter+=100
-     })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
