@@ -1,0 +1,6 @@
+<!--pages/view/view.wxml-->
+<!-- view标签的基本使用 -->
+<view class="view_1">3333</view>
+<view><button>点击</button></view>
+<!-- view标签的其他使用 -->
+<view class="view_2" hover-class="hover_view_2">666</view>

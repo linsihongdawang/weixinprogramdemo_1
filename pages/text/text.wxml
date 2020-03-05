@@ -1,0 +1,6 @@
+<!--pages/text/text.wxml-->
+<!-- text标签的基本使用 -->
+<text>你好小程序\n</text>
+<text>hello,world!\n</text>
+<!-- 默认情况下text中的文本是不能选中的，如果要选中text中的文本则需要往该标签里面添加selectable属性 -->
+<text selectable="{{true}}">23333</text>

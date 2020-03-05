@@ -1,0 +1,16 @@
+/* pages/view/view.wxss */
+.view_1{
+  background-color: red;
+}
+.view_2{
+  background-color: green;
+  font-size: 30px;
+  width: 80px;
+}
+.hover_view_2{
+  background-color: blue;
+  font-size: 50px;
+  color: white;
+  width: 60px;
+  height: 60px;
+}

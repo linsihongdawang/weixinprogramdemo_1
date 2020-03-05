@@ -1,0 +1,22 @@
+<!--pages/image/image.wxml-->
+<!-- image的基本使用 -->
+<!-- 1.image组件可以写成单标签,也可以写成双标签 -->
+<!-- 2.image默认有自己的大小 -->
+<!-- 3.image是一个行内块级元素 inline-block -->
+<image src="/assets/image/sheji_1.jpg"/>
+<!-- 选择相册中的照片 -->
+<button bindtap="uploadImage">选择照片</button>
+<image src="{{imagePath}}"/>
+<!--长按图片出现识别小程序二维码 -->
+<image src="/assets/image/sheji_1.jpg"
+       mode="aspectFit"
+       show-menu-by-longpress/>
+<!-- scroll-view标签的使用        -->
+<!-- 垂直方向上的局部滚动：scroll-y -->
+<!-- 用bind-scroll监听滚动到哪里位置 -->
+<scroll-view class="container_1" 
+             scroll-y 
+             bindscroll="handleScroll">
+<view wx:for="{{10}}" class="item_1">{{item}}</view>
+</scroll-view>
+<!-- 其他事件的补充 -->

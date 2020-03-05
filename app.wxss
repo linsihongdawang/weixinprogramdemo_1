@@ -1,0 +1,9 @@
+.container_1{
+  height: 200px;
+  background-color: pink;
+}
+.item_1{
+  height: 100px; 
+  background-color: yellow;
+  margin: 20px;
+}
