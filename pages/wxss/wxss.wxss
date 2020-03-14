@@ -1,0 +1,11 @@
+/* pages/wxss/wxss.wxss */
+.view_3{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+.view_4{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: blueviolet;
+}

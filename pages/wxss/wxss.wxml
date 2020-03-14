@@ -1,0 +1,31 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- 设置样式的3种方法 -->
+<view class="box_1">设置在wxss.wxss中的页面样式</view>
+<view style="color:red;font-size:50px">23333</view>
+<view class="box_2">设置在app.wxss中的全局样式</view>
+<!-- wxss中的单位：rpx可以对不同移动端屏幕进行适配(但设置大小时应该是原来px单位下的两倍) -->
+<view class="view_3"></view>
+<view class="view_4"></view>
+<!-- 时间实时变化 -->
+<view>{{nowTime}}</view>
+<!-- 列表渲染 -->
+<!-- wx:for可以遍历数组、数字、字符串 -->
+<view wx:for="{{['11','22','33']}}">{{item}} {{index}}</view>
+<view wx:for="LSHdawang">{{item}} {{index}}</view>
+<view wx:for="{{10}}">{{item}}</view>
+<!-- block标签只是用来作判断,不会对组件进行渲染,对一些要渲染的组件进行包裹而已 -->
+<block wx:for="{{3}}">
+<view>233</view>
+<view>444</view>
+</block>
+<!-- 给item,index起别名 -->
+<view wx:for="{{movies}}" wx:for-item="movie">{{movie}}</view>
+<!-- key的作用 -->
+<!-- 这里是使用my-style组件,注：现在自定义组件不支持双标签 组件里面id等其他选择器无效-->
+<!-- <my-style/> -->
+<!-- 给自定义组件传数据 -->
+<my-style/>
+<!-- 自定义组件my-event -->
+<view>{{counter}}</view>
+<!-- bind:increment是triggerEvent中的自定义事件 -->
+<my-event bind:increment="handleIncrement"/>

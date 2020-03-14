@@ -1,0 +1,3 @@
+<!--components/my-event/my-event.wxml-->
+<!-- 给button一个监听点击按钮的事件 -->
+<button bindtap="handleIncrement">+1按钮</button>
