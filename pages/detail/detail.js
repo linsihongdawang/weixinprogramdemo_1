@@ -1,27 +1,18 @@
-// pages/home/home.js
-//导入封装好的网络请求js文件
-import request from '../../service/network.js'
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    name:'zfl'
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  //Promise可以防止发生回调地狱
   onLoad: function (options) {
-        request({
-          url:'http://123.207.32.32:8000/recommend'
-        }).then(res=>{
-           console.log(res)
-        }).catch(err=>{
-           console.log(err) 
-        })
+    console.log(options)   
   },
 
   /**
@@ -49,7 +40,16 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    // console.log('页面退出的时候执行该函数')
+    //详情页传数据到首页的步骤
+    // 1.获取首页中的对象
+    // getCurrentPages获取所有的活跃的页面
+    const allPages=getCurrentPages()
+    const home=allPages[allPages.length-2]
+    //调用页面对象的setData
+    home.setData({
+      name:'zty'
+    })
   },
 
   /**
