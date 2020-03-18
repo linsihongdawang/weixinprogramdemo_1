@@ -1,7 +1,14 @@
 /* pages/home/home.wxss */
-.title{
-  color: blue
+.image{
+  display: flex;/*flex布局方法*/ 
+  height: 100vh;
+  flex-direction: column;/*垂直布局*/
+  align-items: center;/*图片、文字水平方向居中*/
+  justify-content: space-around/*垂直方向分散布局*/
+  
 }
-.button_1{
-  size: 30px
+.beauty{
+  height: 500rpx;
+  width: 500rpx;
+  border-radius: 50%
 }

@@ -5,9 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
+    userAvatarUrl:'/images/beauty.jpg',
+    userName:'欢迎来到微信小程序'
+  },
+  getUserInfo(alluserinfo){
+    const allUserInfo = alluserinfo.detail.userInfo;
+    console.log(allUserInfo);
+    this.setData({
+      userAvatarUrl: allUserInfo.avatarUrl,
+      userName: allUserInfo.nickName
+    })
 
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
