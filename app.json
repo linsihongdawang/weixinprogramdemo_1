@@ -2,5 +2,14 @@
   "pages": [
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#B0E0E6",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "视频播放demo",
+    "backgroundColor": "#ADD8E6",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap.json"
 }

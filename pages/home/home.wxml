@@ -1,3 +1,29 @@
 <!--pages/home/home.wxml-->
-<text class="title">hello,world!</text>
-<button class="button_1">点我</button>
+<view class="container">
+<!-- 区域一:视频播放器 -->
+<video id="video_1" 
+       class="video_1" 
+       controls="true"
+       enable-danmu="false"
+       danmu-btn="false"
+       src="{{src}}"></video>
+<!-- 区域二:弹幕区域 -->
+<view class="danmu_area">
+<input class="input_1" 
+       type="text" 
+       placeholder="请输入弹幕" 
+       bindinput="getDanmu"></input>
+<button class="button_1" 
+       bindtap="sendDanmu">发送弹幕</button>
+</view>
+<!-- 区域二:视频列表 -->
+<!-- data-url用来绑定视频的播放路径 -->
+<view class="video_list">
+<view class="video_bar" 
+      wx:for="{{videoList}}" 
+      wx:key="video{{index}}" data-url="{{item.videoUrl}}" bindtap="playVideo">
+<image src="/images/video_player.png"></image>
+<text>{{item.title}}</text>
+</view>
+</view>
+</view>

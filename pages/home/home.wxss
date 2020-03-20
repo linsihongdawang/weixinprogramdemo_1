@@ -1,7 +1,46 @@
 /* pages/home/home.wxss */
-.title{
-  color: blue
+.container{
+  /* 对container采用flex布局 */
+display: flex;
+height: 100vh;
+/* 对flex采用垂直布局 */
+flex-direction: column;
+/*对垂直布局采用分散排列*/
+align-content: center;
+}
+.video_1{
+  width: 100vw;
+}
+.danmu_area{
+  display: flex;
+  flex-direction:row;
+}
+.input_1{
+  border: 4rpx solid #DCDCDC;
+  height: 60rpx;
+  flex: 1;/*当该input所在位置不够填充满一整行时就自动拉伸填充*/
 }
 .button_1{
-  size: 30px
+  height: 70rpx; 
+  background-color: #ADD8E6;
+  text-align: center;
+  color: white;
+}
+.video_list{
+  width: 100vw;
+}
+.video_bar{
+  width: 95vh;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 4rpx solid #DCDCDC;
+}
+image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10rpx;
+}
+text{
+   font-size: 50rpx;
+   flex: 1;
 }

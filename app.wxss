@@ -1,0 +1,9 @@
+.container{
+  /* 对container采用flex布局 */
+display: flex;
+height: 100vh;
+/* 对flex采用垂直布局 */
+flex-direction: column;
+/*对垂直布局采用分散排列*/
+align-content: center;
+}
