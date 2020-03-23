@@ -1,0 +1,12 @@
+<!--pages/detail/detail.wxml-->
+<!-- 详情页部分 -->
+<view class="detail_area">
+  <view class="title">{{article.title}}</view>
+  <view class="poster">
+    <image class="poster_image" src="{{article.poster}}"></image>
+  </view>
+  <view class="content">
+    <text>{{article.content}}</text>
+  </view>
+  <view class="add_date">{{article.add_date}}</view>
+</view>

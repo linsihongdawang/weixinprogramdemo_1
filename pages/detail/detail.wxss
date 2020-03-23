@@ -1,0 +1,23 @@
+/* pages/detail/detail.wxss */
+/* 详情页部分 */
+.detail_area{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title{
+  font-size: 40rpx;
+  text-align: center;
+  margin: 10rpx 0rpx 10rpx 0rpx;
+}
+.poster_image{
+  width: 100%; 
+}
+.content{
+  text-align: left;
+}
+.add_date{
+  text-align: right;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}

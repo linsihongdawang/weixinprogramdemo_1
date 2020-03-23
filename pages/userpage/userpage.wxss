@@ -1,0 +1,40 @@
+/* pages/userpage/userpage.wxss */
+/* 用户登录区域 */
+.login_area{
+  height: 400rpx;
+  width: 100vw;
+  background-color: #4682B4;
+  display: flex;/*启用flex布局*/
+  flex-direction: column;/*felx布局的排列为自上而下*/
+  align-items: center;/*flex布局里面的文字居中*/
+  justify-content: space-around;/*分散排列*/
+}
+.user_image{
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  border: 6rpx solid white;
+}
+/* 用户收藏列表 */
+.user_favorite{
+
+}
+/* 新闻列表部分的xss */
+.new_list{
+  min-height: (100vh-400rpx);
+  /* background-color: grey; */
+}
+.new_item{
+  display: flex;
+  /* background-color: blueviolet; */
+  border-bottom: 2rpx solid grey;
+  margin: 10rpx;
+}
+.new_list image{
+  height: 150rpx;
+  width: 250rpx;
+  margin: 10rpx;
+}
+.new_list text{
+  width: 100vw
+}

@@ -1,35 +1,31 @@
-// pages/home/home.js
-var commonJS=require('../../common/common.js');
+// pages/userpage/userpage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    swiperImg:[
-      { src:'/images/home/swiper_new(1).jpeg'},
-      { src:'/images/home/swiper_new(2).jpeg'},
-      { src:'/images/home/swiper_new(3).jpeg'}],
-    newsList:[]      
+    userImg:'/images/userpage/user.png',
+    favorite_num:0,
+    nickName:'',
+    newList: [
+      { id: '2', poster: '/images/home/small_new(2).jpeg', title: '法国总统内部讲话流出，令西方世界为之一振!' }]
   },
-  //点击class为new_item的view组件跳转到新闻的具体内容的方法
-  goToDeatil(event){
+  // getUserInfo事件
+  getUserInfo(event){
   //  console.log(event);
-  //获取携带data-id的数据
-  let NewsID=event.currentTarget.dataset.id
-  //携带新闻id进行对应得页面跳转
-  wx.navigateTo({
-    url: '/pages/detail/detail?id='+NewsID,
-  })
+      let userInfo=event.detail.userInfo;
+      this.setData({
+        userImg:userInfo.avatarUrl,
+        nickName:userInfo.nickName,
+        isLogin:true
+      })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   let newsList=commonJS.getNewsList();
-   this.setData({
-     newsList:newsList
-   })
+
   },
 
   /**

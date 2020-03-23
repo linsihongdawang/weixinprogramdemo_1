@@ -1,7 +1,28 @@
 /* pages/home/home.wxss */
-.title{
-  color: blue
+/* 轮播图部分的xss */
+.swiper_1{
+  height: 400rpx;
+  width: 100vw;
 }
-.button_1{
-  size: 30px
+.swiper_img{
+  width: 100vw;
+}
+/* 新闻列表部分的xss */
+.new_list{
+  min-height: (100vh-400rpx);
+  /* background-color: grey; */
+}
+.new_item{
+  display: flex;
+  /* background-color: blueviolet; */
+  border-bottom: 2rpx solid grey;
+  margin: 10rpx;
+}
+.new_list image{
+  height: 150rpx;
+  width: 250rpx;
+  margin: 10rpx;
+}
+.new_list text{
+  width: 100vw
 }
